@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Annuaire"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btSearch"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:onClick="chercher"
+
+            android:text="Chercher" />
+        <!--   android:onClick="search"-->
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="40dp"
+        android:background="#c0c0c0" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="ID :" />
+
+    <EditText
+        android:id="@+id/etId"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="none" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Nom :" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Tel :" />
+
+    <EditText
+        android:id="@+id/etTel"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btNew"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+
+            android:text="Vider" />
+        <!--android:onClick="clear"-->
+
+        <Button
+            android:id="@+id/btDelete"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+
+            android:onClick="delete"
+            android:text="Supprimer" />
+
+        <Button
+            android:id="@+id/btInsert"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+
+            android:onClick="enregistrer"
+            android:text="Enregistrer" />
+
+
+    </LinearLayout>
+</LinearLayout>
